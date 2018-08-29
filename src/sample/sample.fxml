@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="600.0" prefWidth="325.0">
+            <children>
+                <Label layoutX="40.0" layoutY="26.0" text="Работа с COM портом" />
+                <Button fx:id="butt1" layoutX="41.0" layoutY="67.0" mnemonicParsing="false" onAction="#letsCOM" prefHeight="58.0" prefWidth="80.0" text="Порт AMA0" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="butt11" layoutX="89.0" layoutY="363.0" mnemonicParsing="false" onAction="#letsDate" prefHeight="58.0" prefWidth="148.0" text="Отобразить данные" textAlignment="CENTER" wrapText="true" />
+            <Label fx:id="labdata" layoutX="81.0" layoutY="439.0" prefHeight="42.0" prefWidth="164.0" text="Данные" wrapText="true">
+               <font>
+                  <Font size="12.0" />
+               </font></Label>
+            <Button fx:id="butt111" layoutX="89.0" layoutY="503.0" mnemonicParsing="false" onAction="#exit" prefHeight="58.0" prefWidth="148.0" text="Выход" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="butt12" layoutX="89.0" layoutY="204.0" mnemonicParsing="false" onAction="#letsSend" prefHeight="58.0" prefWidth="148.0" text="Получить данные" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="butt121" layoutX="89.0" layoutY="271.0" mnemonicParsing="false" onAction="#letsClose" prefHeight="58.0" prefWidth="148.0" text="Закрыть порт" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="butt122" layoutX="89.0" layoutY="135.0" mnemonicParsing="false" onAction="#letsSendByte" prefHeight="58.0" prefWidth="148.0" text="Отправить данные" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="butt13" layoutX="123.0" layoutY="67.0" mnemonicParsing="false" onAction="#letsCOMttyS" prefHeight="58.0" prefWidth="80.0" text="Порт tty0S" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="butt14" layoutX="205.0" layoutY="67.0" mnemonicParsing="false" onAction="#letsCOMusb" prefHeight="58.0" prefWidth="80.0" text="Порт USB0" textAlignment="CENTER" wrapText="true" />
+            </children>
+        </Pane>
+    </children>
+</GridPane>
